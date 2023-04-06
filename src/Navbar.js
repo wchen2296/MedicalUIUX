@@ -57,7 +57,7 @@ const Navbar = () => {
            
             <NavLink to="/" className="navlink" activeClassName="activeNavlink">
               <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-               Vision World
+              The Inner Garden
               </Typography>
             </NavLink>
 
