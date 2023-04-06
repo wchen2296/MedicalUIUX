@@ -5,8 +5,8 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { Box } from '@mui/system';
-import {Drawer, List, ListItem} from '@mui/material'
+import { Box} from '@mui/system';
+import {Drawer, List, ListItem, Hidden} from '@mui/material'
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
@@ -73,6 +73,7 @@ const Navbar = () => {
               Reviews
             </NavLink>
           </Box>
+          <Hidden mdUp>
           <IconButton
             className="menu-button"
             size="large"
@@ -83,6 +84,7 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
+          </Hidden>
         </Toolbar>
       </AppBar>
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)} classes={{ paper: 'drawer' }}>
